@@ -13,7 +13,8 @@ from telegram.ext import (
 )
 
 # ───────── CONFIG ─────────
-TOKEN = "8500632901:AAHMwWOsrpHYzWuyp0MgHUCEglR6m5nOAfI"
+import os
+TOKEN = os.getenv("TOKEN")
 LIMITE_DIARIO = 5
 DB = "agenda.db"
 
